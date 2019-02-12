@@ -9,28 +9,27 @@
     <title>Axion</title>
 </head>
 <body>
-    <!--просто коммент чтобы ветку создать и первый пул реквест-->
     <header class="header-page">
-        <div class="container d-flex justify-between align-center">
-            <div class="d-flex align-center">
+        <div class="container">
+            <div class="">
                 <div class="logo">
                     <img class="logo-lg" src="img/logo-lg.png" alt="logo">
                 </div>
-                <nav class="d-flex">
-                    <a class="menu__item" href="#">Shop</a>
-                    <a class="menu__item" href="#">News</a>
-                    <a class="menu__item" href="#">Team</a>
-                    <a class="menu__item" href="#">Legacy</a>
-                    <a class="menu__item" href="#">Help</a>
+                <nav class="main-menu">
+                    <a class="main-menu__item" href="#">Shop</a>
+                    <a class="main-menu__item" href="#">News</a>
+                    <a class="main-menu__item" href="#">Team</a>
+                    <a class="main-menu__item" href="#">Legacy</a>
+                    <a class="main-menu__item" href="#">Help</a>
                 </nav>  
             </div>
-            <div class="control d-flex align-center">
-                <form class="form-search" method="post" action="/" name="search">
-                    <input class="search-field" type="search" name="search">
-                    <input class="search-btn" type="image" src="img/search-icon.png" alt="search">
+            <div class="control">
+                <form class="search" method="post" action="/" name="search">
+                    <input class="search__field" type="search" name="search">
+                    <input class="search__btn" type="image" src="img/search-icon.png" alt="search">
                 </form>
                 <a class="sign-in" href="#">Sign in</a>
-                <p class="cart d-flex align-center">
+                <p class="cart">
                     Cart<span class="count">1</span>
                 </p>
                 <button class="lang">
@@ -53,15 +52,15 @@
         </div>
     </section>
     <section class="section-product">
-        <h2 class="section-title text-center">Featured product</h2>
+        <h2 class="section-title section-title_center">Featured product</h2>
         <div class="container">
-            <div class="goods d-flex f-wrap">
-                <div class="goods-item flex-1"><!-- goods-item -->
+            <div class="goods">
+                <div class="goods-item"><!-- goods-item -->
                     <a href="#"><img class="goods-item__icon" src="img/product-1.png" alt="product"></a>
                     <a href="#" class="goods-item__title"><h3>Atlas Black/Rasta Axion</h3></a>
-                    <div class="d-flex align-center justify-between">
+                    <div class="goods-item__info">
                         <p class="goods-item__price"> <span>$</span>89.00</p>
-                        <div class="colors d-flex align-center">
+                        <div class="colors">
                             <button class="colors__item colors__item_grey">grey</button>
                             <button class="colors__item colors__item_active colors__item_black">black</button>
                             <button class="colors__item colors__item_red">red</button>
@@ -69,12 +68,12 @@
                         </div>
                     </div>
                 </div><!-- goods-item end -->
-                <div class="goods-item flex-1"><!-- goods-item -->
+                <div class="goods-item"><!-- goods-item -->
                     <a href="#"><img class="goods-item__icon" src="img/product-2.png" alt="product"></a>
                     <a href="#" class="goods-item__title"><h3>Camel/Chili Pepper Axion</h3></a>
-                    <div class="d-flex align-center justify-between">
+                    <div class="d-flex">
                         <p class="goods-item__price"> <span>$</span>74.00</p>
-                        <div class="colors d-flex align-center">
+                        <div class="colors">
                             <button class="colors__item colors__item_grey">grey</button>
                             <button class="colors__item colors__item_active colors__item_gold">black</button>
                             <button class="colors__item colors__item_red">red</button>
@@ -82,12 +81,12 @@
                         </div>
                     </div>
                 </div><!-- goods-item end -->
-                <div class="goods-item flex-1"><!-- goods-item -->
+                <div class="goods-item"><!-- goods-item -->
                     <a href="#"><img class="goods-item__icon" src="img/product-3.png" alt="product"></a>
                     <a href="#" class="goods-item__title"><h3>Mandel Smoke/Rust Axion</h3></a>
-                    <div class="d-flex align-center justify-between">
+                    <div class="goods-item__info">
                         <p class="goods-item__price"> <span>$</span>69.00</p>
-                        <div class="colors d-flex align-center">
+                        <div class="colors">
                             <button class="colors__item colors__item_grey">grey</button>
                             <button class="colors__item colors__item_active colors__item_brown">black</button>
                             <button class="colors__item colors__item_blue">red</button>
@@ -95,12 +94,12 @@
                         </div>
                     </div>
                 </div><!-- goods-item end -->
-                <div class="goods-item flex-1"><!-- goods-item -->
+                <div class="goods-item"><!-- goods-item -->
                     <a href="#"><img class="goods-item__icon" src="img/product-4.png" alt="product"></a>
                     <a href="#" class="goods-item__title"><h3>Cloud/Electric Blue Axion</h3></a>
-                    <div class="d-flex align-center justify-between">
+                    <div class="goods-item__info">
                         <p class="goods-item__price"> <span>$</span>69.00</p>
-                        <div class="colors d-flex align-center">
+                        <div class="colors">
                             <button class="colors__item colors__item_grey">grey</button>
                             <button class="colors__item colors__item_active colors__item_blue">blue</button>
                             <button class="colors__item colors__item_red">red</button>
@@ -112,7 +111,7 @@
         </div>
     </section>
     <section class="section-about">
-        <div class="container d-flex align-center">
+        <div class="container">
             <div class="video-container">
                 <button class="btn-play">
                     play
@@ -120,7 +119,7 @@
                 </button>
                 <video src="video/code.mp4" controls></video>
             </div>
-            <div class="about-desc flex-1">
+            <div class="section-about__desc">
                 <h2 class="section-title">Legendary footwear reborn</h2>
                 <p class="text">
                     We are a brand with a history and are relaunching for 2019. We’ve been a part of the skater’s family ever since it’s early teenage years. And now we presentate a new footwear collection.
@@ -130,42 +129,42 @@
         </div>
     </section>
     <section class="section-story">
-        <h2 class="section-title text-center">Recent stories</h2>
+        <h2 class="section-title section-title_center">Recent stories</h2>
         <div class="container">
-            <div class="story d-flex ">
-                <div class="story-item d-flex flex-1 d-column f-wrap"><!-- story-item -->
-                    <div class="">
+            <div class="story">
+                <div class="story-item"><!-- story-item -->
+                    <div class="story-item__thumborial">
                         <a href="#">
                             <img src="img/story-1.png" alt="">
                         </a> 
                     </div>
                     <a href="#"><h3 class="story__title">Presents Justin Anagoa</h3></a>
-                    <p class="text story__desc">
+                    <p class="story__desc">
                         Anagoa’s been a part of the skater’s family ever since his early teenage years. He’s been known to go big on and off the board, but it’s been rare we get a glimpse into how Anagoa lives his day-to-day, to see what makes Anagoa tick.
                     </p>
-                    <div class="d-flex justify-between align-center margin-top-auto">
+                    <div class="story__info">
                         <a class="link-more" href="#">Learn more</a>
                         <p class="story__date">11.08.2018</p>
                     </div>
                 </div><!-- story-item end -->
-                <div class="story-item d-flex flex-1 d-column"><!-- story-item -->
-                    <div class="">
+                <div class="story-item"><!-- story-item -->
+                    <div class="story-item__thumborial">
                         <a href="#">
                             <img src="img/story-2.png" alt="">
                         </a> 
                     </div>
                     <a href="#"><h3 class="story__title">First Frontside flip</h3></a>
-                    <p class="text story__desc">
+                    <p class="story__desc">
                         Yoon recently discusses his first time shooting a signature Andrew Reynolds frontside flip on The Berrics. Click the image below to see the full gallery and read up on what happened that day. 
                         Photo:Yoon Sul
                     </p>
-                    <div class="d-flex justify-between align-center margin-top-auto">
+                    <div class="story__info">
                         <a class="link-more" href="#">Learn more</a>
                         <p class="story__date">11.08.2018</p>
                     </div>
                 </div><!-- story-item end -->
-                <div class="text story-item d-flex flex-1 d-column"><!-- story-item -->
-                    <div class="">
+                <div class="story-item"><!-- story-item -->
+                    <div class="story-item__thumborial">
                         <a href="#">
                             <img src="img/story-3.png" alt="">
                         </a>                        
@@ -174,7 +173,7 @@
                     <p class="story__desc">
                         Anagoa’s been a part of the skater’s family ever since his early teenage years. He’s been known to go big on and off the board, but it’s been rare we get a glimpse into how Anagoa lives his day-to-day, to see what makes Anagoa tick.
                     </p>
-                    <div class="d-flex justify-between align-center margin-top-auto">
+                    <div class="story__info">
                         <a class="link-more" href="#">Learn more</a>
                         <p class="story__date">29.07.2018</p>
                     </div>
@@ -184,38 +183,38 @@
     </section>
     <section class="section-galery">        
         <div class="container">
-            <h2 class="section-title">#AXIONfootwear</h2>
-            <div class="galery d-flex">
-                <a class="galery-item flex-1" href="#">
-                    <img class="galery-item__img" src="img/photo-1.png" alt="">
+            <h2 class="section-title section-title_galery">#AXIONfootwear</h2>
+            <div class="galery">
+                <a class="galery__item" href="#">
+                    <img class="galery__item__img" src="img/photo-1.png" alt="">
                 </a>
-                <a class="galery-item flex-1" href="#">
-                    <img class="galery-item__img" src="img/photo-2.png" alt="">
+                <a class="galery__item" href="#">
+                    <img class="galery__item__img" src="img/photo-2.png" alt="">
                 </a>
-                <a class="galery-item flex-1" href="#">
-                    <img class="galery-item__img" src="img/photo-3.png" alt="">
+                <a class="galery__item" href="#">
+                    <img class="galery__item__img" src="img/photo-3.png" alt="">
                 </a>
-                <a class="galery-item flex-1" href="#">
-                    <img class="galery-item__img" src="img/photo-4.png" alt="">
+                <a class="galery__item" href="#">
+                    <img class="galery__item__img" src="img/photo-4.png" alt="">
                 </a>
-                <a class="galery-item flex-1" href="#">
-                    <img class="galery-item__img" src="img/photo-5.png" alt="">
+                <a class="galery__item" href="#">
+                    <img class="galery__item__img" src="img/photo-5.png" alt="">
                 </a>
-                <a class="galery-item flex-1" href="#">
-                    <img class="galery-item__img" src="img/photo-6.png" alt="">
+                <a class="galery__item" href="#">
+                    <img class="galery__item__img" src="img/photo-6.png" alt="">
                 </a>
-                <a class="galery-item flex-1" href="#">
-                    <img class="galery-item__img" src="img/photo-7.png" alt="">
+                <a class="galery__item" href="#">
+                    <img class="galery__item__img" src="img/photo-7.png" alt="">
                 </a>
             </div>
         </div>
     </section>
     <footer>
-        <div class="copyright">
-            <div class="footer-container d-flex justify-between">
-                <div class="flex-1">
-                    <h2 class="footer-title">MY ACCOUNT</h2>
-                    <ul class="list">
+        <div class="footer-content">
+            <div class="footer-container">
+                <div class="footer-menu">
+                    <h2 class="footer-menu__title">MY ACCOUNT</h2>
+                    <ul class="footer-menu__list">
                         <li class="footer-menu__item"><a href="#">Login</a></li>
                         <li class="footer-menu__item"><a href="#">Wish List</a></li>
                         <li class="footer-menu__item"><a href="#">Order History</a></li>
@@ -223,9 +222,9 @@
                         <li class="footer-menu__item"><a href="#">Gift cards</a></li>
                     </ul>
                 </div>
-                <div class="flex-1">
-                    <h2 class="footer-title">CUSTOMER SERVICE</h2>
-                    <ul class="list">
+                <div class="footer-menu">
+                    <h2 class="footer-menu__title">CUSTOMER SERVICE</h2>
+                    <ul class="footer-menu__list">
                         <li class="footer-menu__item"><a href="#">Contact us</a></li>
                         <li class="footer-menu__item"><a href="#">Help/FAQ</a></li>
                         <li class="footer-menu__item"><a href="#">Shipping</a></li>
@@ -234,9 +233,9 @@
                         <li class="footer-menu__item"><a href="#">Holiday shopping</a></li>
                     </ul>
                 </div>
-                <div class="flex-1">
-                    <h2 class="footer-title">MISCELLANEOUS</h2>
-                    <ul class="list">
+                <div class="footer-menu">
+                    <h2 class="footer-menu__title">MISCELLANEOUS</h2>
+                    <ul class="footer-menu__list">
                         <li class="footer-menu__item"><a href="#">About Us</a></li>
                         <li class="footer-menu__item"><a href="#">Careers</a></li>
                         <li class="footer-menu__item"><a href="#">Privacy Policy</a></li>
@@ -245,11 +244,11 @@
                         <li class="footer-menu__item"><a href="#">Homepage US/UK</a></li>
                     </ul>
                 </div>
-                <div class="flex-1">
-                    <h2 class="footer-title">NEWSLETTER SIGN UP</h2>
+                <div class="footer-menu">
+                    <h2 class="footer-menu__title">NEWSLETTER SIGN UP</h2>
                     <p>Get 10% Off Your Next Order!</p>
                     <a class="sign-up" href="#">Sign Up</a>
-                    <div class="social-icon">
+                    <div class="social">
                         <a class="social__item" href="#">
                             <img src="img/icon-fb.svg" alt="">
                         </a>
@@ -264,12 +263,12 @@
                         </a>
                     </div>
                 </div>
-            </div>
-            <div class="copyright d-flex justify-between align-center">
-                <p class="text-center flex-1">
+            </div><!-- footer-container end -->
+            <div class="copyright">
+                <p class="copyright__штащ">
                     &copy; 2019 Axion. All rights reserved.
                 </p>
-                <div class="dev"><a href="#"><img src="img/dev.png" alt="разработано в WebHero School"/></a></div>
+                <div class="dev"><a href="#">Разработано в <img src="img/dev.png" alt="разработано в WebHero School"/></a></div>
             </div>
         </div>
     </footer>  
