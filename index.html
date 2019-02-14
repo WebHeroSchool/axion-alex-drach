@@ -6,14 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
     <title>Axion</title>
 </head>
 <body>
     <header class="header">
-        <div class="container">
+        <div class="container container_header">
             <div class="nav-group">
                 <div class="logo">
                     <img class="logo-lg" src="img/logo-lg.png" alt="logo">
+                    <img class="logo-mobile" src="img/logo-mobile.png" alt="logo">
                 </div>
                 <nav class="main-menu">
                     <a class="main-menu__item" href="#">Shop</a>
@@ -23,6 +25,10 @@
                     <a class="main-menu__item" href="#">Help</a>
                 </nav>  
             </div>
+            <button class="humb">
+                Menu
+                <span></span>
+            </button>
             <div class="control">
                 <form class="search" method="post" action="/" name="search">
                     <input class="search__field" type="search" name="search">
@@ -35,11 +41,7 @@
                 <button class="lang">
                     En
                     <img src="img/lang.png" alt="lang">
-                </button>
-                <button class="humb">
-                    Menu
-                    <span></span>
-                </button>
+                </button>                
             </div>           
         </div>
     </header>

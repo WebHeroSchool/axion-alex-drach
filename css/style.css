@@ -2,6 +2,173 @@
     box-sizing: border-box;
 }
 
-body{
+html, body{
+    margin: 0;
+    padding: 0;
     font-family: 'Gotham Pro';
+    color: #000000;
+    line-height: normal;
 }
+/*
+div{
+    border: 1px solid blue;
+}
+
+section{
+    border: 1px solid red;
+}
+
+h1, h2, h3, h4, p{
+    margin: 0;
+}
+*/
+button{
+    background: none;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+}
+
+.section-title{
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.list{
+    padding-left: 0;
+    list-style-type: none;
+    margin: 0;
+}
+
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+/* header begin */
+
+.logo-mobile{
+    display: none;
+}
+
+.humb{
+    position: relative;
+    font-size: 0;
+    display: none;
+    height: 26px;
+    width: 60px;
+    margin-right: 45px;
+}
+
+.humb span{
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 60px;
+    height: 9px;
+    background-color: #000000
+}
+
+
+.humb span::after{
+    content: '';
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 18px;
+    display: block;
+    width: 60px;
+    height: 9px;
+    background-color: #000000;
+}
+
+.header{
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+
+.header,
+.header a{
+    line-height: normal;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+}
+
+.container_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-group{
+    display: flex;
+    align-items: center;
+}
+
+.main-menu{
+    display: flex;
+}
+
+.logo{
+    margin-right: 45px;
+}
+
+.main-menu__item{    
+    margin-right: 35px;    
+}
+
+.count{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    width: 15px;
+    height: 15px;
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-right: 38px
+}
+
+.search{
+    position: relative;
+}
+
+.search__field{
+    width: 180px;
+    border: none;
+    border-bottom: 1px solid #000000;
+}
+
+.search__btn{
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+}
+
+.sign-in{
+    margin: 0 35px;
+}
+
+.cart{
+    display: flex;
+    align-items: center
+}
+
+.lang{
+    font-size: 0;
+}
+
+.control{
+    display: flex;
+    align-items: center;
+}
+/* header end */

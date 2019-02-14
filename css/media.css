@@ -1,0 +1,14 @@
+@media only screen and (max-width: 768px) {
+    .humb,
+    .logo-mobile{
+        display: block;
+    }
+
+
+    .main-menu,
+    .logo-lg,
+    .control,
+    .control{
+        display: none;
+    }
+}
