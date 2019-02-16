@@ -6,14 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
     <title>Axion</title>
 </head>
 <body>
     <header class="header">
-        <div class="container">
+        <div class="container container_header">
             <div class="nav-group">
                 <div class="logo">
                     <img class="logo-lg" src="img/logo-lg.png" alt="logo">
+                    <img class="logo-mobile" src="img/logo-mobile.png" alt="logo">
                 </div>
                 <nav class="main-menu">
                     <a class="main-menu__item" href="#">Shop</a>
@@ -23,6 +25,10 @@
                     <a class="main-menu__item" href="#">Help</a>
                 </nav>  
             </div>
+            <button class="humb">
+                Menu
+                <span></span>
+            </button>
             <div class="control">
                 <form class="search" method="post" action="/" name="search">
                     <input class="search__field" type="search" name="search">
@@ -30,20 +36,16 @@
                 </form>
                 <a class="sign-in" href="#">Sign in</a>
                 <p class="cart">
-                    Cart<span class="count">1</span>
+                    Cart<span class="count">.</span>
                 </p>
                 <button class="lang">
                     En
                     <img src="img/lang.png" alt="lang">
-                </button>
-                <button class="humb">
-                    Menu
-                    <span></span>
-                </button>
+                </button>                
             </div>           
         </div>
     </header>
-    <section class="section-intro">        
+    <section class="intro">        
         <div class="overlay">
             <div class="container container_intro">
             <h1 class="main-title">Legendary footwear reborn.</h1>
@@ -52,7 +54,7 @@
         </div>
     </section>
     <section class="product">
-        <h2 class="section-title section-title_center">Featured product</h2>
+        <h2 class="section-title title_product">Featured product</h2>
         <div class="goods container">
             <div class="goods-item"><!-- goods-item -->
                 <a href="#"><img class="goods-item__icon" src="img/product-1.png" alt="product"></a>
@@ -115,7 +117,7 @@
                     play
                     <img src="img/btn-play.png" alt="play">
                 </button>
-                <video src="video/code.mp4" controls></video>
+                <video src="video/code.mp4"></video>
             </div>
             <div class="about__desc">
                 <h2 class="section-title">Legendary footwear reborn</h2>
