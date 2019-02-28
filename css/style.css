@@ -9,7 +9,7 @@ html, body{
     color: #000000;
     line-height: normal;
 }
-/*
+
 div{
     border: 1px solid blue;
 }
@@ -21,7 +21,7 @@ section{
 h1, h2, h3, h4, p{
     margin: 0;
 }
-*/
+
 button{
     background: none;
     padding: 0;
@@ -359,7 +359,213 @@ a{
 
 /* intro end */
 
-/* это пока для того чтобы адаптив проверить, выпирает сильно без стилей */
+/* about begin */
+.about{
+    background-color: #000000;
+    color: #ffffff;
+    padding: 75px 41px 75px 41px;
+    max-width: 1170px;
+    margin: 0 auto 80px auto;
+}
+
+.container_video{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.video-wrapper{
+    position: relative;
+    width: 630px;
+    height: 345px;
+    border: 8px solid rgba(255, 255, 255, 0.8);
+    margin-right: 50px;
+    overflow: hidden;
+}
+
+.btn-play{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0;
+    z-index: 10;
+}
+
 video{
     width: 100%;
 }
+
+.title_about{
+    margin-bottom: 15px;
+       
+}
+
+.about__desc{
+    flex: 1;
+}
+
+.about__text{
+    line-height: 16px;
+    font-size: 13px; 
+    margin-bottom: 15px;
+}  
+
+/* about end */
+
+/* story begin */
+.story{
+    margin-bottom: 80px;
+}
+
+.title_story{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.story-group{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.story-item{
+    flex: 1;
+    display: flex;
+    flex-direction: column
+}
+
+.story-item__thumborial img{
+    display: block;
+    width: 100%;
+}
+
+.story__title{
+    display: block;
+    color: #000000;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.story__desc{
+    line-height: 16px;
+    font-size: 13px; 
+    margin-bottom: 18px;
+}
+
+.story-item:not(:last-child){
+    margin-right: 55px;
+}
+
+.story-item__thumborial{
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.story__info{
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.story__date{
+    font-size: 12px;
+    opacity: 0.3;
+    font-weight: bold;
+}
+
+/* story end */
+
+/* galery begin */
+.galery{
+    margin-bottom: 80px;
+}
+
+.galery-group{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.galery__item{
+    flex: 1;
+    overflow: hidden;
+}
+
+.galery__item__img{
+    display: block;
+    width: 100%;
+}
+/* galery end*/
+
+/* footer begin */
+footer{
+    background-color: #000000;
+    padding: 70px 30px 30px 30px;
+    color: #ffffff;
+}
+
+footer a{
+    color: #ffffff;
+}
+
+.footer-container{
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-menu{
+    flex: 1;
+}
+
+.footer-menu__title{
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.footer-menu__list{
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.sign-up{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 30px;
+    border: 1.5px solid #ffffff;
+    font-size: 10px;
+    margin: 11px 0 34px 0;
+    text-transform: uppercase;
+}
+
+.footer-menu__item{
+    margin-bottom: 6px;
+}
+
+.social__item:not(:last-child){
+    margin-right: 25px;
+}
+
+.copyright{
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+    font-size: 12px
+}
+
+.copyright__info{
+    flex: 1;
+    text-align: center;
+}
+
+.dev{
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    margin-right: 30px;
+}
+/* footer end */
