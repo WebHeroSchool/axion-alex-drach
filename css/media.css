@@ -1,5 +1,5 @@
 
-/*@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1200px) {
     .main-menu__item {
         margin-right: 20px;
     }
@@ -11,8 +11,12 @@
     .cart {
         margin-right: 20px;
     }
+
+    .header, .story{
+        padding: 0 10px 40px 10px;
+    }
 }
-*/
+
 @media only screen and (max-width: 768px) {
     .container_header{
         padding: 0 40px;
@@ -44,7 +48,7 @@
     }
 
     .link-more{
-        font-size: 20px;
+        font-size: 16px;
     }
 
     .goods{
@@ -80,8 +84,18 @@
     }
 
     .about{
+        padding: 0 15px 100px 15px;
         margin-bottom: 0;
         padding-bottom: 100px;
+        background: linear-gradient(2.6deg, #000 96%, #fff 82%);
+    }
+
+    .about .link-more{
+        display: none;
+    }
+
+    .title_about {
+        padding-top: 80px;
     }
 
     .about__desc{
@@ -102,20 +116,49 @@
     .story{
         background-color: #000000;
         color: #ffffff;
+        margin-bottom: 0
     }
 
     .story a{
         color: #ffffff;
     }
 
-    .story-item{
-        width: 50%;
-        margin: 10px;
+    .story .link-more::after{
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        background-image: url("../img/arrow-link-white.png");
     }
 
-    .story-item:not(:last-child){
-        margin-right: 10px;
-    }*/
+    .story-item{
+        padding: 10px;
+        flex: 50%;
+    }
+
+    
+
+    .story-item:not(:last-child) {
+        margin-right: 0;
+    }
+
+    .galery{
+        padding: 0 15px;
+        background: linear-gradient(2.6deg, #fff 55%, #000 55%);
+    }
+
+    .section-title_galery{
+        opacity: 1;
+        color: #ffffff;
+    }
+
+    .galery__item{
+        flex-basis: 25%;
+    }
+
+    .dev{
+        display: none;
+    }
+
 }
 
 @media only screen and (max-width: 480px) {
@@ -160,27 +203,32 @@
     }
 
     .video-wrapper{
-        height: 150px;
-    }
-
-    .about {
-        padding: 75px 20px 75px 20px;
-    }
-
-    .story{
-        padding: 0 10px;
+        height: 250px;
     }
 
     .story-item{
-        flex-basis: 100%;
+        flex: 100%;
     }
 
-    .galery{
-        padding: 0 20px;
+    .footer-container{
+        font-size: 15px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 
-    .galery__item{
-        flex: 25%;
+    .footer-menu{
+        margin-bottom: 50px;
+    }
+
+    .footer-menu:last-child{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social{
+        margin-top: 100px;
     }
  
 }

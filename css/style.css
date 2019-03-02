@@ -10,14 +10,6 @@ html, body{
     line-height: normal;
 }
 
-div{
-    border: 1px solid blue;
-}
-
-section{
-    border: 1px solid red;
-}
-
 h1, h2, h3, h4, p{
     margin: 0;
 }
@@ -481,12 +473,19 @@ video{
     margin-bottom: 80px;
 }
 
+.section-title_galery{
+    text-align: right;
+    margin-bottom: 6px;
+    opacity: 0.3;
+}
+
 .galery-group{
     display: flex;
     flex-wrap: wrap;
 }
 
 .galery__item{
+    display: block;
     flex: 1;
     overflow: hidden;
 }
@@ -538,7 +537,7 @@ footer a{
     height: 30px;
     border: 1.5px solid #ffffff;
     font-size: 10px;
-    margin: 11px 0 34px 0;
+    margin: 20px 0 34px 0;
     text-transform: uppercase;
 }
 
@@ -546,8 +545,12 @@ footer a{
     margin-bottom: 6px;
 }
 
-.social__item:not(:last-child){
-    margin-right: 25px;
+.social{
+    display: flex;
+    justify-content: space-between;
+    width: 140px;
+    margin: 0 auto;
+    font-size: 12px;
 }
 
 .copyright{
